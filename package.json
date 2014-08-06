@@ -1,0 +1,25 @@
+{
+  "name": "image-clean",
+  "version": "0.0.0",
+  "description": "This is a package to search through you HTML,IMAGE, and CSS folders looking for unused images",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecasilla/image-clean.git"
+  },
+  "keywords": [
+    "unimage",
+    "images",
+    "remove-images",
+    "image-clean"
+  ],
+  "author": "Ernie Casilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecasilla/image-clean/issues"
+  },
+  "homepage": "https://github.com/ecasilla/image-clean"
+}
