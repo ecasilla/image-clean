@@ -1,0 +1,95 @@
+footer {  
+
+  background-color: #2c2f34;
+  max-width: 1329px;
+  margin: 0 auto;
+
+  &.fixed {
+    left: 0;
+    right: 0;
+    position: fixed;
+  }
+
+
+  .title {
+    padding-top: 51px;
+    color: #ebebeb;
+    font: 30px/30px 'DTV-DIN-ULT-LGT';
+    text-align: center;
+  }
+  .button {
+    width: 234px;
+    height: 37px;
+    padding-top: 24px;
+    border-radius: 5px;
+    margin: 36px auto 68px;
+
+
+    background: url(../images/footer_button.svg) no-repeat;
+    color: #fff;
+    font: 15px/15px 'DTV-DIN-BOLD';
+    text-align: center;
+    vertical-align: middle;
+    &:hover {
+      background: url(../images/footer_button_rollover.svg) no-repeat;
+    }
+    .p {
+
+    }
+  }
+  .locations {
+    width: 920px;
+
+    margin: 0 auto;
+    .location {
+
+      float: left;
+      .city {
+        height: 26px;
+        padding-left: 24px;
+        background: transparent url(#{$urlpath-image}footerlocationpin.png) no-repeat top left;
+        color: #e1e1e1;
+        font: bold 18px/18px $font-sans;
+
+      }
+      &.elsegundo {
+        margin-left: 0px
+      }
+      &.chicago {
+        margin: auto 194px;
+      }
+      .address {
+        margin-left: 24px;
+        color: #707070;
+        font: 14px/20px $font-sans;
+      }
+    }
+  }
+
+  .legal {
+    height: 43px;
+    margin-top: 56px;
+    background-color: #25262a;
+    font: 14px/14px $font-sans;
+
+    .left {
+      margin-top: 15px;
+      color: #46494c;
+    }
+    .right {
+      margin-top: 15px;
+      a {
+        margin-left: 39px;
+        color: #8c949a;
+        text-decoration: none;
+
+        &:link, &:visited {
+
+        }
+        &:hover, &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

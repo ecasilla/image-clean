@@ -1,0 +1,29 @@
+#subnav {
+  position: relative;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.5); }
+  #subnav hr {
+    margin-bottom: 0;
+    margin-top: 6px;
+    height: 1px;
+    background: #d8dce3;
+    border: none; }
+  #subnav ul {
+    list-style: none;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-left: 0; }
+  #subnav li {
+    display: inline-block;
+    margin-top: 17px;
+    width: 190px;
+    height: 85px; }
+    #subnav li p {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: bold;
+      color: #848788;
+      font-size: 12px; }
+    #subnav li.active p, #subnav li:hover p {
+      color: #323434; }

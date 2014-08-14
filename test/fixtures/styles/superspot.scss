@@ -1,0 +1,77 @@
+@import 'style.scss';
+
+#Superspot {
+  a {
+    font-size: 14px;
+  }
+  
+  .pageheader {
+    background: url(../images/superspot/superspot.jpg) center 0px no-repeat;
+  }
+  #ReachBetter {
+   .image {
+      margin-top: 10px;
+      margin-left: -7px;
+    }
+	  .text {
+		 width: 330px;
+     h2 { 
+      margin-top: 0px;
+    }
+     p {
+        margin-bottom: 30px;
+      }
+	  }
+  }
+
+  #BestShows {
+    
+	  .image {
+      padding-right: 30px;
+	  }
+    .text {
+      width: 386px;
+      padding-left: 30px;
+      padding-top: 50px;
+	    h2 {
+		   margin-top: 0;
+	    }
+    }
+  }
+
+
+  .statsHeader {
+    font-family: 'DTV-DIN-LGT';
+    padding-bottom: 15px;
+    border-bottom: 1px solid $linecolor;
+  }
+  .statsTable {
+    width: 660px;
+    .underline {
+      border-bottom: 1px solid $linecolor;
+      td {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+    }
+    td {
+      height: 25px;
+
+      font-weight: normal;
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #929292;
+      vertical-align: middle;
+      &:nth-child(1) {
+        width: 275px;
+        padding-right: 25px;
+        font-weight: bold;
+        color: black;
+        text-align: right;
+      }
+    }
+  }
+
+  
+
+}

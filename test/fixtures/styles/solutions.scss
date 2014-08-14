@@ -1,0 +1,211 @@
+@import 'style.scss';
+
+#subnav{
+  margin-top: -4px;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    margin-left: -6px;
+    cursor: pointer;
+    &:nth-child(1) {
+      margin-left: 107px;
+    }
+  }
+}
+
+#cluster{
+  margin-left:6%;
+}
+
+.center{
+  text-align: center;
+}
+
+
+#OurSolutionsSlideShow {
+  -ms-overflow-y: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 1329px;
+  min-width: 1024px;
+  height: 567px;
+  margin: 0 auto;
+  img {
+    max-width: 1329px;
+    min-width: 1024px;
+    height: 688px;
+  }
+}
+
+.addressable {
+  background: url(../images/addressable/addressable.jpg) center top no-repeat;
+}
+.clusters {
+  background: url(../images/clusters/clusters.jpg) center top no-repeat;
+}
+
+.sports {
+  background: url(../images/dtveverywhere/directv_everywhere.jpg) center top no-repeat;
+}
+
+.superspot {
+  background: url(../images/superspot/superspot.jpg) center top no-repeat;
+}
+
+.pageheader {
+  h1 {
+    margin-top: 122px;
+    margin-bottom: 15px;
+    padding: 0;
+    font: 42px/47px DTV-DIN-ULT-LGT;
+  }
+  h3 {
+    padding-top: 150px;
+    padding-bottom: 0px;
+  }
+  h2 {
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    color: #3781dc;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+#selected{
+  margin:{
+    left: 0%;
+    top: -2%;
+    bottom: -0.64567%;
+  }
+  border: 2px solid #3781dc;
+  width: 110px;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -transform: translate3d(0,0,0);
+  
+  -webkit-transition: margin-left .3s ease-in;
+  -moz-transition: margin-left .3s ease-in;
+  -transition: margin-left .3s ease-in;
+
+  &.addressable{ margin-left: 15.5%; }
+  &.clusters{ margin-left: 36.2%; }
+  &.sports{ margin-left: 56.5%; }
+  &.superSpot{ margin-left: 77%; }
+}
+
+
+
+
+
+#ArrowsContainer {
+  position: relative;
+  max-width: 1329px;
+  min-width: 1024px;
+  height: 600px;
+  margin-top: -620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrows {
+  position: absolute;
+  top: 335px;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+#leftArrow{
+  background: url("#{$urlpath-image}/arrow_left.svg") no-repeat;
+  background-position: left center;
+  left: 15px;
+}
+
+#rightArrow{
+  background: url("#{$urlpath-image}/arrow_right.svg") no-repeat;
+  background-position: right center;
+  right: 15px;
+}
+
+#landing{
+  min-width: 1024px;
+  margin-top: -100px;
+  margin-bottom: 5%;
+}
+
+#productsContainer{
+  
+}
+
+#secondPage{
+  padding-bottom: 125px;
+      &.pageHeader {
+    h2 {
+      font-family: DTV-DIN-ULT-LGT;
+      font-size: 30px;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    p {
+      font-weight: 200;
+      color: #6f7172;
+      font-size: 16px;
+      line-height: 27px;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+
+    
+
+    .products{
+      h3 {
+        font-family: DTV-DIN-ULT-LGT;
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: normal;
+      }
+      p {
+        font-size: 14px;
+      }
+      display: inline-block;
+      background-color: #fff;
+      border: 1px solid #efefef;
+      border-bottom: 2px solid #3781dc;
+      margin: 2%;
+      margin-right: 0;
+      margin-left: 23px;
+      &:nth-child(3n+1){
+        margin-left: 0;
+      }
+      
+      width: 286px;
+      height: 305px;
+      .a-learn{
+        width: 100%;
+        padding-top: 1%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    img{
+     margin-bottom: -1%;
+     margin-top: 8%;
+    }
+}
+
+

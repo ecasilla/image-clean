@@ -2,11 +2,10 @@
   "name": "image-clean",
   "version": "0.0.0",
   "description": "This is a package to search through you HTML,IMAGE, and CSS folders looking for unused images",
-  "main": "index.js",
+  "main": "lib/clean-image.js",
   "scripts": {
     "test": "grunt test"
   },
-  "main": "lib/clean-image.js",
   "bin": {
     "clean-image": "bin/clean-image"
   },
@@ -30,10 +29,11 @@
   "homepage": "https://github.com/ecasilla/image-clean",
   "dependencies": {
     "async": "~0.9.0",
+    "cheerio": "^0.17.0",
     "commander": "~2.2.0",
     "css": "~2.0.0",
-    "phantomjs": "~1.9.7-12",
     "node-phantom-simple": "~1.2.0",
+    "phantomjs": "~1.9.7-12",
     "request": "~2.36.0",
     "underscore": "~1.6.0"
   },
@@ -54,5 +54,6 @@
         "lib/clean-image.js",
         "lib/lib.js"
       ]
-    }}
+    }
+  }
 }

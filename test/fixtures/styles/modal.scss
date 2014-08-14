@@ -1,0 +1,185 @@
+.modalcontent{
+  width: 816px;
+  min-height: 500px;
+  padding-bottom: 50px;
+  border: 1px solid #29292a;
+  border-radius: 6px;
+  background-color: #fff;
+  z-index: 9999;
+
+  position: fixed;
+  top: -300%;
+  right: 0;
+  left: 0;
+  margin: 0 auto 50px;
+  height: 0;
+
+  // Transition to Close
+  -webkit-transition: opacity .2s ease-in, top 0s ease-in .3s;
+  -moz-transition: opacity .2s ease-in, top 0s ease-in .3s;
+  -ms-transition: opacity .2s ease-in, top 0s ease-in .3s;
+  -o-transition: opacity .2s ease-in, top 0s ease-in .3s;
+  transition: opacity .2s ease-in, top 0s ease-in .3s;
+  opacity: 0;
+
+  &.open {
+    opacity: 1;
+    top: 50px;
+    height: auto;
+    position: relative;
+
+    // Transition to Open
+    -webkit-transition: opacity .2s ease-in .2s, top .2s ease-out .2s;
+    -moz-transition: opacity .2s ease-in .2s, top .2s ease-out .2s;
+    -ms-transition: opacity .2s ease-in .2s, top .2s ease-out .2s;
+    -o-transition: opacity .2s ease-in .2s, top .2s ease-out .2s;
+    transition: opacity .2s ease-in .2s, top .5s ease-out .2s;
+  }
+
+
+  .modalHeader {
+    height: 100px;
+    background: url(../images/modalHeader.jpg) bottom center repeat-x;
+    margin-bottom: 10px;
+    .controls {
+      position: absolute;
+      right: 0;
+      margin-top: 0;
+      div {
+        float: left;
+        border-left: 1px solid #dfdfdf;
+        
+      }
+      .leftModalArrow {
+        height: 95px;
+        width: 95px;
+        background: url("#{$urlpath-image}/arrow_left.svg") no-repeat center 29px;
+      }
+      .rightModalArrow {
+        height: 95px;
+        width: 95px;
+        background: url("#{$urlpath-image}/arrow_right.svg") no-repeat center 29px;
+      }
+      .close {
+        height: 95px;
+        width: 95px; 
+        background: url('../images/x_out.svg') no-repeat center 29px;
+      }
+    }
+    .modaltitle {
+      height: 45px;
+      margin-top: 38px;
+      margin-left: 28px;
+      float: left;
+      color: $textcolor1;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+
+
+}
+
+#ViewerStatistics {
+  .source {
+    margin-top: 20px;
+    margin-right: 73px;
+  }
+}
+
+.modalbg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(32, 33, 34, .9);
+  z-index: 999;
+
+  
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -ms-transition: opacity .2s ease-in;
+  -o-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
+  opacity: 0;
+  height: 0;
+
+  &.open {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+
+
+
+
+#ContactModal {
+  height: 615px;
+  
+  .modalHeader {
+    height: 60px;
+    margin-bottom: 0;
+    background: none;
+    .controls {
+      .close {
+        border: none;
+      }
+    }
+  }
+
+  #emailaddress {
+    font-weight: normal;
+    font: 35px DTV-DIN-ULT-LGT;
+  }
+
+
+
+  
+  .contactModal {
+    border-bottom: none;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  .contactUsTable {
+    // margin-top: 90px;
+    width: 600px;
+    tr {
+      height: 140px;
+      border-bottom: 1px solid #e6e6e6;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+  p {
+    font: 35px DTV-DIN-ULT-LGT;
+    margin-top: 0;
+    font-weight: normal;
+  }
+
+  .phone {
+    background: url(../images/contact/phone.jpg) left center no-repeat;
+    width: 90px;
+
+  }
+  a, a:visited {
+      color: black;
+
+    }
+    
+  .download {
+    
+    background: url(../images/contact/download.jpg) left center no-repeat;
+  }
+  .email {
+    background: url(../images/contact/email.jpg) left center no-repeat;
+  }
+
+}
+
+
+

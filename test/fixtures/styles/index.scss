@@ -1,0 +1,438 @@
+@import 'style.scss';
+
+body {
+  margin-top: 85px;
+  overflow: hidden;
+}
+
+//Homepage
+
+
+
+#nav {
+  position: fixed;
+  z-index: 20;
+  header {
+    max-width: none;
+    -webkit-transition: -webkit-transform .5s linear;
+    -moz-transition: -moz-transform .5s linear;
+    -ms-transition: -ms-transform .5s linear;
+    transition: transform .5s linear;
+    .logo {
+      float: none;
+      width: 100%;
+    }
+    nav {
+      // ul.menu >li.contact {
+      //   padding-bottom: 4px;
+      // }
+      // ul.menu > li > a {
+      //   padding: 36px 36px;
+      // }
+      ul.submenu {
+        max-width: none;
+      }
+    }
+    &.hide {
+      -webkit-transform: translateY(-85px);
+      -moz-transform: translateY(-85px);
+      -ms-transform: translateY(-85px);
+      transform: translateY(-85px);
+      nav {
+        ul.submenu {
+          -webkit-transform: translateY(-85px);
+          -moz-transform: translateY(-85px);
+          -ms-transform: translateY(-85px);
+          transform: translateY(-85px);
+        }
+      }
+    }
+  }
+}
+
+$housewidth : 500px;
+$numberofhouses : 7;
+$ultfont : DTV-DIN-ULT-LGT;
+#houses {
+  height: 10px;
+  overflow: hidden;
+  .housewrap {
+    height: 100%;
+    //width: $housewidth*$numberofhouses*2;
+
+    //transition: -webkit-transform 1s linear;
+    .house {
+      height: 100%;
+      //width: $housewidth;
+      float: left;
+      opacity: 1;
+      
+      cursor: pointer;
+      &:hover {
+        opacity: .75;
+      }
+    }
+    .house01, .house01b {
+      background-color: #ff0000;
+      background: url(/images/index2/01.jpg);
+      background-size: cover;
+    }
+    .house02, .house02b {
+      background-color: #00ff00;
+      background: url(/images/index2/02.jpg);
+      background-size: cover;
+    }
+    .house03, .house03b {
+      background-color: #0000ff;
+      background: url(/images/index2/03.jpg);
+      background-size: cover;
+    }
+    .house04, .house04b {
+      background-color: #ffff00;
+      background: url(/images/index2/04.jpg);
+      background-size: cover;
+    }
+    .house05, .house05b {
+      background-color: #ff00ff;
+      background: url(/images/index2/05.jpg);
+      background-size: cover;
+    }
+    .house06, .house06b {
+      background-color: #ffffff;
+      background: url(/images/index2/06.jpg);
+      background-size: cover;
+    }
+    .house07, .house07b {
+      background-color: #00ffff;
+      background: url(/images/index2/07.jpg);
+      background-size: cover;
+    }
+  }
+  .headline {
+    width: 100%;
+    position: absolute;
+    top: 17%;
+    right: 0;
+    text-align: center;
+    .head {
+      color: #484b4c;
+      font: 60px/75px $ultfont;
+      .category {
+        //width: 327px;
+        //display: inline-block;
+        color: #2778dc;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+    .subhead {
+      margin-top: 17px;
+      color: #525657;
+      font-size: 14px;
+    }
+  }
+}
+
+#slides {
+  width: 100%;
+  height: 100%; 
+  position: fixed;
+  top: 100%;
+  background: #ddd;
+  z-index: 15;
+  transition: top .5s linear, padding-top .5s linear;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  .sidebar {
+    width: 89px;
+    height: 100%;
+    margin-right: -89px;
+    float: right;
+    background: #252728;
+    opacity: 0;
+    overflow: hidden;
+    transition: margin-right .5s linear .5s, opacity .5s linear .5s, height .5s linear .5s;
+    &.hide {
+      height: 66px;
+      .bluebar {
+        opacity: 0;
+
+        transition: opacity .5s linear ;
+      }
+    }
+    .menubutt {
+      height: 66px;
+      position: relative;
+      background-color: #eceff4;
+      cursor: pointer;
+      //background: #eceff4 url(/images/index2/menu/menu.png) no-repeat 50% 50%;
+      #nav-toggle {
+        position: absolute; 
+        top: 20px;
+        left: 28px;
+        cursor: pointer; padding: 10px 35px 16px 0px;
+        span, span:before, span:after {
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 35px;
+          background: #000;
+          position: absolute;
+          display: block;
+          content: '';
+          transition: all 500ms ease-in-out;
+        }
+        span:before {
+          top: -10px;
+        }
+        span:after {
+          bottom: -10px;
+        }
+        &.active {
+          span {
+            background-color: transparent;
+          }
+          span:before, span:after {
+            top: 0;
+          }
+          span:before {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          span:after {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .allslides {
+      .menuslide {
+        min-height: 108px;
+
+        position: relative;
+        cursor: pointer;
+        transition: height .5s linear;
+        .menuslideinner {
+          height: 108px;
+          
+          margin: auto;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(/images/index2/menu/slide-01.png) no-repeat 50% 50%;
+          opacity: .2;
+          transition: opacity 1s linear;
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+      #menuslide-01 {
+        .menuslideinner {
+          background-image: url(/images/index2/menu/slide-01.png);
+        }
+      }
+      #menuslide-02 {
+        .menuslideinner {
+          background-image: url(/images/index2/menu/slide-02.png);
+        }
+      }
+      #menuslide-03 {
+        .menuslideinner {
+          background-image: url(/images/index2/menu/slide-03.png);
+        }
+      }
+      #menuslide-04 {
+        .menuslideinner {
+          background-image: url(/images/index2/menu/slide-04.png);
+        }
+      }
+    }
+
+
+    .downarrow {
+      height: 66px;
+      background: url(/images/index2/menu/arrow.png) no-repeat 50% 50%;
+      cursor: pointer;
+      transition: opacity .25s linear 1s;
+      &.deactivate {
+        opacity: .2;
+      }
+    }
+    .bluebar {
+      width: 3px;
+      height: 108px;
+      position: fixed;
+      top: 66px;
+      background: #3781dc;
+      transition: top .75s linear, opacity .5s linear 1s;
+
+    }
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+    
+    &#slide-01 {
+      background-image: url(/images/index2/01/slide_1.jpg);
+      .textwrap {
+        .text {
+          width: 50%;
+          height: 258px;
+          left: -50%;
+          h1, h3 {
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+    &#slide-02 {
+      background-image: url(/images/index2/01/slide_2.jpg);
+      top: 100%;
+      transition: top .5s linear;
+      &.active {
+        top: 0%;
+      }
+      .textwrap {
+        .text {
+          height: 168px;
+          margin: 0 89px 0 0;
+          bottom: 7%;
+          top: initial;
+        }
+      }
+    }
+    &#slide-03 {
+      background-image: url(/images/index2/01/slide_3.jpg);
+      opacity: 0;
+      transition: opacity .5s linear;
+      &.active {
+        opacity: 1;
+      }
+      .textwrap {
+        .text {
+          height: 168px;
+          margin: 0 89px 0 0;
+          bottom: 7%;
+          top: initial;
+        }
+      }
+    }
+    &#slide-04 {
+      background-image: url(/images/index2/01/slide_4.jpg);
+      top: 100%;
+      transition: top .5s linear;
+      &.active {
+        top: 0%;
+      }
+      .textwrap {
+        .text {
+          top: 50%;
+          margin: -30px 89px 0 0;
+          text-align: center;
+          h1.phone {
+            margin: 36px 0 8px;
+          }
+          .learnmore {  
+            
+            color: #3781dc;
+            font-weight: bold;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &.active {
+      
+    }
+    .textwrap {
+      height: 100%;
+      position: relative;
+      .text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        h1 {
+          margin: 0 0 27px;
+          color: #242323;
+          font: 60px/57px $ultfont;
+          text-align: center;
+        }
+        h3 {
+          margin: 0;
+          color: #141516;
+          font: 20px/37px $ultfont;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+  &.active {
+    top: 0%;
+    .sidebar {
+
+      margin-right: 0px;
+      opacity: 1;
+      .bluebar {
+        
+      }
+    }
+  }
+  &.shrink {
+    padding-top: 85px;
+  }
+
+
+//for loop for all slide images for each category
+  @for $section from 1 through 7 {
+    &.clicked0#{$section} {
+      @for $slidenumber from 1 through 4 {
+        #slide-0#{$slidenumber} {
+          background-image : url(/images/index2/0#{$section}/slide_#{$slidenumber}.jpg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #houses {
+    .headline {
+      .head {
+        font-size: 50px;
+        line-height: 62px;
+      }
+    }
+  }
+
+  #slides {
+    .slide {
+      .textwrap {
+        .text {
+          h1 {
+            font-size: 50px;
+            line-height: 62px;
+          }
+        }
+      }
+    }
+  }
+}

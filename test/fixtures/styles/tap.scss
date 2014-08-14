@@ -1,0 +1,37 @@
+@import 'style.scss';
+
+
+#Tap {
+	main {
+    .pageheader {
+      background: url(../images/tap/tune_in.jpg) center 0px no-repeat;
+    }
+
+    #Multiple {
+      .image {
+        margin-left: -10px;
+      }
+		  .text {
+        padding-top: 20px;
+        width: 395px;
+       p {
+          margin: 0 auto 60px;
+        }
+		  }
+    }
+
+    #Chart {
+      .text {
+        width: 400px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        img {
+          margin-top: 113px;
+        }
+      }
+      .image {
+        margin-top: 71px;
+      }
+    }
+  }
+}

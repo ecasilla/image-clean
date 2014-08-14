@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'DTV-DIN-ULT-LGT';
+  src: url("/fonts/DIN-Ultra-Light.eot");
+  src: url("/fonts/DIN-Ultra-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/DIN-Ultra-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DTV-DIN-LGT';
+  src: url("/fonts/DINOT-Light.eot");
+  src: url("/fonts/DINOT-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/DINOT-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DTV-DIN';
+  src: url("/fonts/DINWeb.eot");
+  src: url("/fonts/DINWeb.eot?#iefix") format("embedded-opentype"), url("/fonts/DINWeb.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'DTV-DIN-BOLD';
+  src: url("/fonts/DINWeb-Bold.eot");
+  src: url("/fonts/DINWeb-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/DINWeb-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }

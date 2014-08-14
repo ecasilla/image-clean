@@ -1,0 +1,22 @@
+@import 'normalize.css';
+@import 'variables.scss';
+@import 'globals.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'modal.scss';
+@import 'subnav.scss';
+
+#tentwentyfour {
+  width: 1025px;
+  height: 2000px;
+  //border: 1px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9999999999999;
+  background: transparent url(/images/guides.png) repeat-y;
+  pointer-events:none;
+  display: none;
+}

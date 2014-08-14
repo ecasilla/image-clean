@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad Sales</title>
+  <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/animate.css">
+</head>
+<body>
+  <section id="nav">
+    <header>
+    <div class="logo">
+     <a href="/"><img src="../images/logo.jpg" alt="Directv Logo"></a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="/about">ABOUT US</a></li>
+        <li class="our-solutions"><a href="#">OUR SOLUTIONS</a>
+          <ul class="submenu">
+            <li><a href="/addressable-advertising">ADDRESSABLE ADVERTISING</a></li>
+            <li><a href="/superspot">SUPERSPOT</a></li>
+            <li><a href="/interactive">INTERACTIVE</a></li>
+            <li><a href="/tune-in">TUNE IN</a></li>
+            <li><a href="/clusters">CLUSTERS</a></li>
+            <li><a href="/sports-advantage">SPORTS ADVANTAGE</a></li>
+            <li><a href="/direct-response">DIRECT RESPONSE</a></li>
+            <li><a href="/additional-services">ADDITIONAL SERVICES</a></li>
+          </ul>
+
+        </li>
+        <li><a href="/case-studies">CASE STUDIES</a></li>
+        <li class="contact"><a href="/contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  </section>
+
+  <section id="houses">
+    <div class="housewrap">
+      <div class="house house01">
+      </div>
+      <div class="house house02"></div>
+      <div class="house house03"></div>
+      <div class="house house04"></div>
+      <div class="house house01b"></div>
+      <div class="house house02b"></div>
+      <div class="house house03b"></div>
+      <div class="house house04b"></div>
+    </div>
+  </section>
+
+<div id="st-container" class="pt-perspective hidden">
+
+  <aside>
+     <div id="sidebar" class="sidebar-wrapper hidden">
+          <div>
+        <center>
+          <a id="nav-toggle" href="#"><span></span></a>
+        </center>
+        </div>
+
+        <div>
+          <center>
+            <img id="upCaret" src="../images/sidebar-nav-up.png" alt="Up Button">
+          </center>
+          </div>
+
+         <div>
+          <center>
+            <hr>
+            <img id="personButton" class="nav" src="../images/sidebar-nav-1.png" alt="Person Button">
+          </center>
+         </div>
+
+        <div>
+          <center>
+            <hr>
+            <img id="mapButton" class="nav" src="../images/sidebar-nav-1.png" alt="Map Button">
+          </center>
+        </div>
+
+        <div>
+          <center>
+            <hr>
+            <img id="searchButton" class="nav" src="../images/sidebar-nav-1.png" alt="Search Button">
+          </center>
+        </div>
+
+        <div>
+          <center>
+            <hr>
+              <img id="salesButton" class="nav" src="../images/sidebar-nav-1.png" alt="Sales Button">
+          </center>
+        </div>
+
+        <div>
+            <hr>
+            <center>
+            <img id="downCaret" src="../images/sidebar-nav-down.png" alt="Down Button">
+            </center>
+        </div>
+      </div>
+  </aside>
+
+<!-- content push wrapper -->
+    <div class="st-pusher">
+
+    <div class="logo">
+     <a href="/"><img src="../images/logo.jpg" alt="Directv Logo"></a>
+    </div>
+    <nav id="st-menu" class="">
+      <ul class="menu">
+        <li><a href="/about">ABOUT US</a></li>
+        <li class="our-solutions"><a href="#">OUR SOLUTIONS</a>
+          <ul class="submenu">
+            <li><a href="/addressable-advertising">ADDRESSABLE ADVERTISING</a></li>
+            <li><a href="/superspot">SUPERSPOT</a></li>
+            <li><a href="/interactive">INTERACTIVE</a></li>
+            <li><a href="/tune-in">TUNE IN</a></li>
+            <li><a href="/clusters">CLUSTERS</a></li>
+            <li><a href="/sports-advantage">SPORTS ADVANTAGE</a></li>
+            <li><a href="/direct-response">DIRECT RESPONSE</a></li>
+            <li><a href="/additional-services">ADDITIONAL SERVICES</a></li>
+          </ul>
+
+        </li>
+        <li><a href="/case-studies">CASE STUDIES</a></li>
+        <li class="contact"><a href="/contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+        <div class="st-content"><!-- this is the wrapper for the content -->
+            <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+              <section id="mainContent" class="hidden">
+                <div>
+                  <img class="hidden" id="person" src="../images/slide1.png" >
+
+                  <img class="hidden" id="map" src="../images/slide2.png"  >
+
+                  <img  class="hidden"id="search" src="../images/slide3.png" >
+
+                  <img class="hidden" id="sales" src="../images/slide4.png"  >
+                </div>
+              </section>
+            </div><!-- /st-content-inner -->
+        </div><!-- /st-content -->
+    </div><!-- /st-pusher -->
+  </div><!-- /st-container -->
+</div>
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/scripts/app.js"></script>
+</body>
+</html>

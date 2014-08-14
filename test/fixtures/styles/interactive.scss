@@ -1,0 +1,131 @@
+@import 'style.scss';
+
+
+#Interactive {
+	
+    .pageheader {
+      background: url(../images/interactive/interactive.jpg) center 0px no-repeat;
+    }
+
+    .full-width {
+      border-bottom: 1px solid $linecolor;
+      padding-bottom: 50px;
+    }
+
+    #Award {
+		  .text {
+        padding-top: 20px;
+        width: 420px;
+       p {
+          margin: 0 auto 60px;
+        }
+		  }
+    }
+
+
+
+    #DAU {
+      b {
+        margin-left: 3px;
+      }
+      padding-top: 24px;
+      .playOverlay {
+        display: none;
+        background: url(../images/interactive/playOverlay.png) center center no-repeat;
+        width: 444px;
+        height: 278px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .text {
+        width: 740px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        h2 { 
+          margin-bottom: 0px;
+        }
+
+      }
+      .images {
+        .dau {
+          position: relative;
+          width: 445px;
+          margin-left: -3px;
+          margin-bottom: 55px;
+          float: left;
+          text-align: left;
+          font-size: 14px;
+          img {
+            padding-bottom: 6px;
+          }
+          &:nth-child(2n) {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+
+    #SAU {
+            b {
+        margin-left: 3px;
+      }
+      padding-top: 22px;
+      .playOverlay {
+        display: none;
+        background: url(../images/interactive/playOverlay.png) center center no-repeat;
+        width: 285px;
+        height: 185px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .text {
+        padding-bottom: 23px;
+        h2 {
+          margin-bottom: 0px;
+        }
+      }
+      .sau {
+        position: relative;
+        width: 285px;
+        margin-left: 32px;
+        margin-bottom: 25px;
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        &:first-child {
+          margin-left: -3px;
+        }
+        img {
+            padding-bottom: 6px;
+          }
+      }
+    }
+
+    #Graph {
+      padding-top: 40px;
+      .text {
+        h2 {
+          margin-top: 23px;
+          margin-bottom: 0;
+        }
+        
+      }
+    }
+
+    #VideoModal {
+      background: transparent;
+      border: none;
+      &.open {
+        top: 20%;
+      }
+      .controls {
+        position: absolute;
+        left: 790px;
+        top: 0;
+
+      }
+    }
+
+}

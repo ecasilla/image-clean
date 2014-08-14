@@ -1,0 +1,59 @@
+@import 'style.scss';
+
+
+#Sports {
+    .pageheader {
+      background: url(../images/sports/sports_header.jpg) center bottom no-repeat;
+    }
+
+
+    #SundayTicket {
+      background: url(../images/sports/peyton.png) top right no-repeat;
+      .text {
+        h2 { margin-top: 20px; }
+        width: 500px;
+        .trade {
+          font-size: 24px;
+        }
+       p {
+          margin-bottom: 80px;
+        }
+		  }
+    }
+
+    #WhenInRome {
+      border-bottom: 1px solid $linecolor;
+      margin-bottom: 50px;
+      .image {
+        height: 301px;
+      }
+    }
+
+    #Exposure {
+      margin-top: 80px;
+      border-bottom: 1px solid $linecolor;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      h2 {
+        margin-bottom: 0;
+      }
+      p { 
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+    }
+
+    #PowerfulFans {
+      padding-bottom: 80px;
+      h2 {
+        margin-bottom: 0;
+      }
+      p { 
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+    }
+
+}

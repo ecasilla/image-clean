@@ -1,0 +1,41 @@
+@import 'style.scss';
+
+#DirectResponse {
+  main {
+    .pageheader {
+      background: url(../images/directresponse/Direct.jpg) center 0px no-repeat;
+    }
+
+    #ShortForm {
+      
+     .image {
+      }
+      .text {
+        width: 446px;
+        // margin-right: 75px;
+        h2 {
+
+        }
+      }
+    }
+
+    
+    #LongForm {
+      .wrap1024 {
+        margin-top: 0;
+      }
+      .image {
+        margin-right: -45px;
+        overflow: hidden;
+        width: 561px;
+      }
+      //background: url(../images/directresponse/responseSection2.jpg) top right no-repeat;
+      .text {
+        width: 400px;
+      }
+      .contact {
+        font-weight: bold;
+      }
+    }
+  }
+}

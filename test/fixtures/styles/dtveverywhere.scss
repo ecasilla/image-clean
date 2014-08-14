@@ -1,0 +1,35 @@
+@import 'style.scss';
+
+
+#DTVEverywhere {
+	main {
+    .pageheader {
+      background: url(../images/dtveverywhere/directv_everywhere.jpg) center 0px no-repeat;
+    }
+
+    #OnTheGo {
+      padding-bottom: 50px;
+	   .image {
+         margin-left: 70px;
+      }
+		  .text {
+         margin-right: 70px;
+			 width: 370px;
+       p {
+          // margin-bottom: 30px;
+        }
+		  }
+    }
+
+    #Countless {
+      padding-bottom: 50px;
+      .text {
+        p {
+          width: 600px;
+          margin: 0 auto;
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+}

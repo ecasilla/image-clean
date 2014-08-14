@@ -1,0 +1,58 @@
+@import 'style.scss';
+
+#Addressable {
+
+    .pageheader {
+      background: url(../images/addressable/addressable.jpg) center 0px no-repeat;
+    }
+
+    #GetToKnow {
+     .image {
+        // margin-top: 30px;
+        // margin-left: 70px;
+        margin-left: 15px;
+      }
+      .text {
+        margin-top: 40px;
+        width: 445px;
+       p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    #ZeroWaste {
+      padding-bottom: 75px;
+      padding-top: 33px;
+      border-bottom: 1px solid $linecolor;
+      .image {
+        margin: 50px auto 0;
+        width: 750px;
+
+      }
+      .text {
+        text-align: center;
+        width: 750px;
+        margin: 0 auto;
+        padding-top: 50px;
+        h2 {
+         margin-top: 0;
+         margin-bottom: 20px;
+        }
+      }
+    }
+
+    #ipad {
+      margin-top: 100px;
+     .image {
+         margin-left: 5px;
+      }
+      .text {
+        // margin-right: 60px;
+        width: 366px;
+       p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+}

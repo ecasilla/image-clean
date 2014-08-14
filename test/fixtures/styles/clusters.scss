@@ -1,0 +1,191 @@
+@import 'style.scss';
+
+.slidesjs-next, .slidesjs-previous {
+  // display:none;
+}
+
+#Clusters {
+  .pageheader {
+    background: url(../images/clusters/clusters.jpg) center 0px no-repeat;
+  }
+
+  #ClusterBuy {
+   .image {
+    margin-top: 10px;
+     margin-left: -30px;
+    }
+	  .text {
+		 width: 370px;
+     h2 {
+      margin-bottom: 24px;
+     }
+     p {
+        margin-bottom: 30px;
+      }
+	  }
+  }
+
+  #Graph {
+    padding-bottom: 30px;
+    .wrap1024 {
+      margin-bottom: 42px;
+    }
+	  .image{
+      margin-left: -25px;
+    }
+    .text {
+      width: 360px;
+      padding-top: 50px;
+	    h2 {
+		   margin-top: 0;
+       margin-bottom: 23px;
+	    }
+    }
+  }
+
+
+  #Map {
+   .image {
+    
+    }
+    .text {
+     width: 323px;
+     margin-top: -33px;
+     p {
+        margin-bottom: 30px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #TargetedClusters {
+
+    padding-bottom: 50px;
+    .header {
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 45px;
+
+      h3 {
+        font: 30px/30px DTV-DIN-ULT-LGT;
+      }
+    }
+    
+    h4 {
+      font-size: 14px;
+      // padding-top: 30px;
+      margin-top: 19px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .viewDemoInfo {
+      cursor: pointer;
+      margin-right: 22px;
+    }
+    .clusterName {
+      margin-left: 22px;
+    }
+  }
+
+  .cluster {
+    width: 908px;
+    margin: 0 auto;
+    height: 202px;
+    padding-bottom: 80px;
+  }  
+
+  .sports {
+    background: url("/images/clusters/02_sports.jpg") no-repeat;
+  }
+
+  .adults {
+    background: url("/images/clusters/03_adult.jpg") no-repeat;
+  }
+
+  .male {
+    background: url("/images/clusters/01_male.jpg") no-repeat;
+  }
+
+  .female {
+    background: url("/images/clusters/04_female.jpg") no-repeat;
+  }
+
+  .kids {
+    background: url("/images/clusters/05_kids.jpg") no-repeat;
+  }
+  
+  .lifestyle {
+    background: url("/images/clusters/06_lifestyle.jpg") no-repeat;
+  }
+
+  .news {
+    background: url("/images/clusters/07_news.jpg") no-repeat;
+  }
+
+
+  .ya {
+    background: url("/images/clusters/08_young_adult.jpg") no-repeat;
+  }
+
+
+
+  // Modal
+  #ClustersModal {
+    width: 910px;
+    .modalHeader {
+      margin-bottom: 34px;
+    }
+    #ClustersSlideShow {
+        width: 910px;
+        margin: 0 auto;
+    }
+    .clusterTable {
+      margin: 0 auto;
+      padding-top: 26px;
+      border-collapse: separate;
+      border-spacing: 10px;
+      th, td {
+        border: 1px solid #efefef;
+        border-collapse: separate;
+        border-spacing: 10px;
+        width: 222px;
+        height: 130px;
+        text-align: center;
+      }
+      .lastCellHideMe {
+        border: 0;
+      }
+      
+      .audiencePercent {
+        font-size: 12px;
+        color: #CCC;
+        text-align: center;
+      }
+  }
+
+  .radial-progress .inset .percentage {
+      text-align: start;
+    }
+
+  .tableHeader {
+    font: bold 15px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+  }
+  
+  .tableData {
+    font: 30px 'DTV-DIN';
+    color: #262627;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  }
+
+
+
+
+}
