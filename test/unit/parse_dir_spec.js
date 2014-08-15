@@ -6,18 +6,6 @@ var expect    = require('chai').expect,
  
 describe('directory parser ',function () {
 
-  beforeEach(function () {
-    ignoredFiles = [
-      'test/fixtures/images/index2/01.jpg',
-      'test/fixtures/images/index2/02.jpg',
-      'test/fixtures/images/index2/03.jpg',
-      'test/fixtures/images/index2/04.jpg',
-      'test/fixtures/images/index2/05.jpg',
-      'test/fixtures/images/index2/06.jpg',
-      'test/fixtures/images/index2/07.jpg',
-    ]
-  }); 
-
   describe('The parse directory for all files interface',function () {
     it('should correctly list all files in nested directory',function (done) {
       var expectedFiles = images;
@@ -28,6 +16,15 @@ describe('directory parser ',function () {
       });
     });
     it('should ignore the files listed in the ignore parameter',function (done) {
+      ignoredFiles = [
+        'test/fixtures/images/index2/01.jpg',
+        'test/fixtures/images/index2/02.jpg',
+        'test/fixtures/images/index2/03.jpg',
+        'test/fixtures/images/index2/04.jpg',
+        'test/fixtures/images/index2/05.jpg',
+        'test/fixtures/images/index2/06.jpg',
+        'test/fixtures/images/index2/07.jpg',
+      ]
       parse_dir('test/fixtures/images',ignoredFiles,function (err,files) {
         _.each(files,function (file) {
           expect(ignoredFiles.indexOf(file)).to.equal(-1);
@@ -35,9 +32,17 @@ describe('directory parser ',function () {
       });
       done();
     });
-    it('should not raise error if you ignore everthing in a path',function (done) {
-      var ignore = images;
-      parse_dir('test/fixtures/images',ignore, function (err,files) {
+    it('should ignore everthing in a path if you if needed',function (done) {
+      var ignore = [ 'test/fixtures/images/modal/arrow-right.jpg',
+        'test/fixtures/images/modal/automotive.jpg',
+        'test/fixtures/images/modal/chart-exposure.jpg',
+        'test/fixtures/images/modal/chart-impressions.jpg',
+        'test/fixtures/images/modal/cli-chevrolet.jpg',
+        'test/fixtures/images/modal/arrow-left.jpg',
+        'test/fixtures/images/modal/cli-toyota.jpg',
+        'test/fixtures/images/modal/close.jpg',
+      'test/fixtures/images/modal/cli-dodge.jpg' ];
+      parse_dir('test/fixtures/images/modal',ignore, function (err,files) {
         expect(files).to.be.empty();
       });
       done(); 
