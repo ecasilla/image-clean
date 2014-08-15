@@ -1,0 +1,18 @@
+{
+  "launch_in_dev" : ["Node"],
+  "launch_in_ci": ["Node","Coverage"],
+  "framework": "mocha+chai",
+  "launchers": {
+    "Node": {
+      "command": "mocha test/unit -c -s 1000 -R spec -u bdd --inline-diffs"
+    },
+    "Coverage" : {
+      "command": "grunt cover"
+    }
+  },
+  "src_files": [
+    "lib/**/*.js",
+    "test/unit/**/*.js"
+  ]
+}
+

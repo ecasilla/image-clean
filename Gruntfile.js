@@ -1,51 +1,69 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
-  //Project configuration.
-  grunt.initConfig({
+	//Project configuration.
+	grunt.initConfig({
 
-    jshint: {
-      all: ['{lib,tests,.}/*.js', 'bin/uncss'],
+		jshint: {
+			files: ['test/unit/**/*.js', 'test/intergration/**/*.js', 'lib/**/*.js', '!node_modules/*', '!test/helpers/**/*.js'],
+			options: {
+				jshintrc: '.jshintrc',
+				reporter: require('jshint-stylish')
+			}
+		},
+
+    coverage: {
       options: {
-        jshintrc: '.jshintrc'
+        thresholds: {
+          'statements': 90,
+          'branches': 90,
+          'lines': 90,
+          'functions': 90
+        },
+        dir: 'coverage',
+        root: 'test'
       }
     },
 
-    mochacov: {
-      unit: {
+    plato:{
+      lint: {
         options: {
-          reporter: 'spec'
-        }
-      },
-      coverage: {
-        options: {
-          reporter: 'html-cov'
-        }
-      },
-      coveralls: {
-        options: {
-          coveralls: {
-            serviceName: 'travis-ci'
+          jshint: grunt.file.readJSON('.jshintrc'),
+          dir: "test/coverage",
+          title: grunt.file.readJSON('package.json').name,
+          complexity: {
+            minmi:true,
+            forin: true,
+            logicalot:false
           }
+        },
+        files:{
+          'test/coverage': ['lib/**/*.js']
         }
       },
-      options: {
-        files: 'tests/*.js',
-        slow: 7500,
-        timeout: 20000
-      }
-    }
-  });
+    },
+		watch: {
+			options: {
+				livereload: true,
+			},
+			jshint: {
+				tasks: ['jshint'],
+				files: ['test/unit/**/*.js', 'test/intergration/**/*.js', 'lib/**/*.js', '!node_modules/*', '!test/helpers/**/*.js']
+			}
+		}
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-mocha-cov');
+	});
 
-  require('time-grunt')(grunt);
+	//automatically load deps from package.jso
+	for (var key in grunt.file.readJSON("package.json").devDependencies) {
+		if (key.indexOf("grunt") === 0 && key !== "grunt") {
+			grunt.loadNpmTasks(key);
+		}
+	}
 
-  grunt.registerTask('cover', ['mochacov:coverage']);
-  grunt.registerTask('test', ['jshint', 'mochacov:unit']);
-  grunt.registerTask('travis', ['jshint', 'mochacov:unit', 'mochacov:coveralls']);
-  grunt.registerTask('default', 'test');
+	require('time-grunt')(grunt);
+
+	grunt.registerTask('cover', ['plato']);
+	grunt.registerTask('default', ['watch']);
 };
-
