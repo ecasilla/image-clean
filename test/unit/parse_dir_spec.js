@@ -32,7 +32,7 @@ describe('directory parser ',function () {
       });
       done();
     });
-    it('should ignore everthing in a path if you if needed',function (done) {
+    it('should ignore everthing in a path if needed',function (done) {
       var ignore = [ 'test/fixtures/images/modal/arrow-right.jpg',
         'test/fixtures/images/modal/automotive.jpg',
         'test/fixtures/images/modal/chart-exposure.jpg',

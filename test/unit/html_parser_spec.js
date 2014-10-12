@@ -9,7 +9,6 @@ var getHtml = require('../../lib/html-parser.js'),
    describe('The HTML module interface',function () {
 
      it('should parse a html path into raw html',function (done) {
-       //parseHtml(html_arr[0]);
        done();
      });
    });
